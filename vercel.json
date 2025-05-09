@@ -1,7 +1,14 @@
 {
-    "buildCommand": "npm install --force && npm run build",
+    "version": 2,
+    "buildCommand": "bash ./build.sh",
     "installCommand": "npm install --no-optional",
     "framework": "vite",
-    "outputDirectory": "dist"
+    "outputDirectory": "dist",
+    "github": {
+      "silent": true
+    },
+    "env": {
+      "ROLLUP_WASM_NODE": "1"
+    }
   }
   
