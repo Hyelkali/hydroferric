@@ -38,7 +38,7 @@ const NewsDetailPage = () => {
         date: "May 15, 2023",
         category: "Company News",
         tags: ["Fleet Management", "Contract", "Pacific Silverline"],
-        image: "/images/silverline-1.png",
+        image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       },
       {
         id: "2",
@@ -64,7 +64,7 @@ const NewsDetailPage = () => {
         date: "April 3, 2023",
         category: "Operations",
         tags: ["Fleet Management", "Maintenance", "Operational Excellence"],
-        image: "/images/silverline-2.png",
+        image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       },
       {
         id: "3",
@@ -92,7 +92,7 @@ const NewsDetailPage = () => {
         date: "March 12, 2023",
         category: "Safety",
         tags: ["Safety", "Crew Transfer", "Milestone"],
-        image: "/images/silverline-3.png",
+        image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       },
     ]
 
@@ -111,9 +111,9 @@ const NewsDetailPage = () => {
 
   if (loading) {
     return (
-      <div className="pt-16 flex justify-center items-center min-h-screen bg-gray-50 dark:bg-gray-900">
+      <div className="flex items-center justify-center min-h-screen pt-16 bg-gray-50 dark:bg-gray-900">
         <div className="text-center">
-          <div className="w-16 h-16 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <div className="w-16 h-16 mx-auto mb-4 border-4 border-blue-600 rounded-full border-t-transparent animate-spin"></div>
           <p className="text-gray-600 dark:text-gray-400">Loading article...</p>
         </div>
       </div>
@@ -122,10 +122,10 @@ const NewsDetailPage = () => {
 
   if (!article) {
     return (
-      <div className="pt-16 flex justify-center items-center min-h-screen bg-gray-50 dark:bg-gray-900">
-        <div className="text-center max-w-md px-4">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Article Not Found</h2>
-          <p className="text-gray-600 dark:text-gray-400 mb-6">
+      <div className="flex items-center justify-center min-h-screen pt-16 bg-gray-50 dark:bg-gray-900">
+        <div className="max-w-md px-4 text-center">
+          <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">Article Not Found</h2>
+          <p className="mb-6 text-gray-600 dark:text-gray-400">
             The article you are looking for could not be found. It may have been removed or you might have followed an
             incorrect link.
           </p>
@@ -153,13 +153,13 @@ const NewsDetailPage = () => {
           <div className="container mx-auto">
             <Link
               to="/gallery#news"
-              className="inline-flex items-center text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md mb-4"
+              className="inline-flex items-center px-4 py-2 mb-4 text-white bg-blue-600 rounded-md hover:bg-blue-700"
             >
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to News
             </Link>
-            <h1 className="text-4xl font-bold text-white mb-4">{article.title}</h1>
-            <div className="flex flex-wrap items-center text-white gap-4">
+            <h1 className="mb-4 text-4xl font-bold text-white">{article.title}</h1>
+            <div className="flex flex-wrap items-center gap-4 text-white">
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2" />
                 {article.date}
@@ -179,25 +179,25 @@ const NewsDetailPage = () => {
 
       {/* Main Content */}
       <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="container px-4 mx-auto">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             {/* Left Column - Article Content */}
             <div className="lg:col-span-2">
               <FadeIn>
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-8">
+                <div className="p-6 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
                   <div
                     className="prose prose-blue max-w-none dark:prose-invert"
                     dangerouslySetInnerHTML={{ __html: article.content }}
                   ></div>
 
                   {/* Tags */}
-                  <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+                  <div className="pt-6 mt-8 border-t border-gray-200 dark:border-gray-700">
                     <div className="flex flex-wrap items-center">
-                      <span className="text-gray-700 dark:text-gray-300 mr-2">Tags:</span>
+                      <span className="mr-2 text-gray-700 dark:text-gray-300">Tags:</span>
                       {article.tags.map((tag, index) => (
                         <span
                           key={index}
-                          className="inline-block bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full px-3 py-1 text-sm mr-2 mb-2"
+                          className="inline-block px-3 py-1 mb-2 mr-2 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300"
                         >
                           {tag}
                         </span>
@@ -208,26 +208,26 @@ const NewsDetailPage = () => {
                   {/* Share */}
                   <div className="mt-6">
                     <div className="flex items-center">
-                      <Share2 className="w-5 h-5 text-gray-700 dark:text-gray-300 mr-2" />
-                      <span className="text-gray-700 dark:text-gray-300 mr-4">Share:</span>
+                      <Share2 className="w-5 h-5 mr-2 text-gray-700 dark:text-gray-300" />
+                      <span className="mr-4 text-gray-700 dark:text-gray-300">Share:</span>
                       <div className="flex space-x-2">
                         <a
                           href="#"
-                          className="p-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
+                          className="p-2 text-white transition-colors bg-blue-600 rounded-full hover:bg-blue-700"
                           aria-label="Share on Facebook"
                         >
                           <Facebook className="w-4 h-4" />
                         </a>
                         <a
                           href="#"
-                          className="p-2 bg-blue-400 text-white rounded-full hover:bg-blue-500 transition-colors"
+                          className="p-2 text-white transition-colors bg-blue-400 rounded-full hover:bg-blue-500"
                           aria-label="Share on Twitter"
                         >
                           <Twitter className="w-4 h-4" />
                         </a>
                         <a
                           href="#"
-                          className="p-2 bg-blue-700 text-white rounded-full hover:bg-blue-800 transition-colors"
+                          className="p-2 text-white transition-colors bg-blue-700 rounded-full hover:bg-blue-800"
                           aria-label="Share on LinkedIn"
                         >
                           <Linkedin className="w-4 h-4" />
@@ -243,21 +243,21 @@ const NewsDetailPage = () => {
             <div>
               {/* Related Articles */}
               <FadeIn>
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-8">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Related Articles</h3>
+                <div className="p-6 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                  <h3 className="mb-4 text-xl font-semibold text-gray-900 dark:text-white">Related Articles</h3>
                   <div className="space-y-6">
                     {relatedArticles.map((related) => (
                       <div
                         key={related.id}
-                        className="border-b border-gray-200 dark:border-gray-700 pb-6 last:border-0 last:pb-0"
+                        className="pb-6 border-b border-gray-200 dark:border-gray-700 last:border-0 last:pb-0"
                       >
                         <Link to={`/news/${related.id}`}>
                           <img
                             src={related.image || "/placeholder.svg"}
                             alt={related.title}
-                            className="w-full h-40 object-cover rounded-lg mb-3"
+                            className="object-cover w-full h-40 mb-3 rounded-lg"
                           />
-                          <h4 className="text-lg font-semibold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors mb-2">
+                          <h4 className="mb-2 text-lg font-semibold text-gray-900 transition-colors dark:text-white hover:text-blue-600 dark:hover:text-blue-400">
                             {related.title}
                           </h4>
                         </Link>
@@ -273,17 +273,17 @@ const NewsDetailPage = () => {
 
               {/* Categories */}
               <FadeIn delay={0.1}>
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-8">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Categories</h3>
+                <div className="p-6 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                  <h3 className="mb-4 text-xl font-semibold text-gray-900 dark:text-white">Categories</h3>
                   <ul className="space-y-2">
                     {["Company News", "Operations", "Safety", "Fleet", "Industry Updates"].map((category, index) => (
                       <li key={index}>
                         <Link
                           to="#"
-                          className="flex items-center justify-between text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                          className="flex items-center justify-between text-gray-700 transition-colors dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
                         >
                           <span>{category}</span>
-                          <span className="bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 text-xs rounded-full px-2 py-1">
+                          <span className="px-2 py-1 text-xs text-gray-600 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-400">
                             {index + 1}
                           </span>
                         </Link>
@@ -295,14 +295,14 @@ const NewsDetailPage = () => {
 
               {/* Contact */}
               <FadeIn delay={0.2}>
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Get In Touch</h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-4">
+                <div className="p-6 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                  <h3 className="mb-4 text-xl font-semibold text-gray-900 dark:text-white">Get In Touch</h3>
+                  <p className="mb-4 text-gray-600 dark:text-gray-400">
                     Have questions about our services or want to learn more about Hydroferric?
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-flex items-center w-full px-4 py-2 font-medium text-white transition-colors bg-blue-600 rounded-md hover:bg-blue-700 justify-center"
+                    className="inline-flex items-center justify-center w-full px-4 py-2 font-medium text-white transition-colors bg-blue-600 rounded-md hover:bg-blue-700"
                   >
                     Contact Us
                   </Link>
@@ -315,27 +315,27 @@ const NewsDetailPage = () => {
 
       {/* More News Section */}
       <section className="py-12 bg-gray-100 dark:bg-gray-800">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">More News</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="container px-4 mx-auto">
+          <h2 className="mb-8 text-3xl font-bold text-center text-gray-900 dark:text-white">More News</h2>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {relatedArticles.map((related) => (
               <FadeIn key={related.id} delay={0.1}>
-                <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden">
+                <div className="overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-900">
                   <img
                     src={related.image || "/placeholder.svg"}
                     alt={related.title}
-                    className="w-full h-48 object-cover"
+                    className="object-cover w-full h-48"
                   />
                   <div className="p-6">
-                    <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-2">
+                    <div className="flex items-center mb-2 text-sm text-gray-500 dark:text-gray-400">
                       <Calendar className="w-4 h-4 mr-1" />
                       {related.date}
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{related.title}</h3>
-                    <p className="text-gray-600 dark:text-gray-400 mb-4">{related.excerpt}</p>
+                    <h3 className="mb-2 text-xl font-semibold text-gray-900 dark:text-white">{related.title}</h3>
+                    <p className="mb-4 text-gray-600 dark:text-gray-400">{related.excerpt}</p>
                     <Link
                       to={`/news/${related.id}`}
-                      className="inline-flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
+                      className="inline-flex items-center font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
                     >
                       Read More
                       <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">

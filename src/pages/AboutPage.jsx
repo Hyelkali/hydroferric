@@ -8,7 +8,7 @@ const AboutPage = () => {
       <section
         className="py-20 bg-blue-600"
         style={{
-          backgroundImage: "url('/images/vessel-fleet.png')",
+          backgroundImage: "url('https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -50,7 +50,7 @@ const AboutPage = () => {
             <div className="lg:w-1/2">
               <FadeIn delay={0.2}>
                 <img
-                  src="/images/vessel-fleet.png"
+                  src="https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg"
                   alt="Hydroferric Headquarters"
                   className="w-full h-auto rounded-lg shadow-xl"
                 />
@@ -141,7 +141,7 @@ const AboutPage = () => {
               <FadeIn key={member} delay={(member - 1) * 0.1}>
                 <div className="overflow-hidden rounded-lg shadow-md bg-gray-50 dark:bg-gray-900">
                   <img
-                    src="/images/vessel-fleet.png"
+                    src="https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg"
                     alt={`Team Member ${member}`}
                     className="object-cover w-full h-64"
                   />
@@ -166,7 +166,7 @@ const AboutPage = () => {
           <div className="flex flex-col items-center gap-12 lg:flex-row">
             <div className="lg:w-1/2">
               <FadeIn>
-                <img src="/images/vessel-fleet.png" alt="Safety First" className="w-full h-auto rounded-lg shadow-xl" />
+                <img src="https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg" alt="Safety First" className="w-full h-auto rounded-lg shadow-xl" />
               </FadeIn>
             </div>
             <div className="lg:w-1/2">

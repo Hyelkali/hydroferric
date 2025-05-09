@@ -98,7 +98,7 @@ const HomePage = () => {
             <div className="lg:w-1/2">
               <FadeIn>
                 <img
-                  src="/images/silverline-2.png"
+                  src="https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg"
                   alt="Pacific Silverline Fleet"
                   className="object-cover w-full h-auto rounded-lg shadow-xl"
                 />
@@ -165,7 +165,7 @@ const HomePage = () => {
                 description="Our headquarters and main operational base with comprehensive marine support facilities."
                 icon={<MapPin className="w-10 h-10" />}
                 link="/contact#port-harcourt"
-                className="hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+                className="transition-all duration-300 transform hover:shadow-xl hover:-translate-y-2"
               />
             </FadeIn>
 
@@ -175,7 +175,7 @@ const HomePage = () => {
                 description="Strategic location serving Nigeria's commercial capital with quick response capabilities."
                 icon={<Anchor className="w-10 h-10" />}
                 link="/contact#lagos"
-                className="hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+                className="transition-all duration-300 transform hover:shadow-xl hover:-translate-y-2"
               />
             </FadeIn>
 
@@ -185,7 +185,7 @@ const HomePage = () => {
                 description="Specialized facility for vessel maintenance and offshore support operations."
                 icon={<Tool className="w-10 h-10" />}
                 link="/contact#warri"
-                className="hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+                className="transition-all duration-300 transform hover:shadow-xl hover:-translate-y-2"
               />
             </FadeIn>
           </div>
@@ -216,7 +216,7 @@ const HomePage = () => {
                   className="overflow-hidden transition-transform bg-white rounded-lg shadow-md dark:bg-gray-800 hover:scale-105"
                 >
                   <img
-                    src="/images/vessel-fleet.png"
+                    src="https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg"
                     alt={`Team Member ${member}`}
                     className="object-cover w-full h-64"
                   />

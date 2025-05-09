@@ -12,7 +12,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 z-10 bg-gradient-to-r from-blue-900/80 to-black/50" />
-        <img src="/images/silverline-3.png" alt="Pacific Silverline Fleet" className="object-cover w-full h-full" />
+        <img src="https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg" alt="Pacific Silverline Fleet" className="object-cover w-full h-full" />
       </div>
 
       {/* Content */}

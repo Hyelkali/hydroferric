@@ -154,7 +154,7 @@ const CareersPage = () => {
       <section
         className="py-20 bg-blue-600"
         style={{
-          backgroundImage: "url('/images/silverline-3.png')",
+          backgroundImage: "url('https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -225,9 +225,9 @@ const CareersPage = () => {
               <div className="space-y-6">
                 {jobOpenings.map((job) => (
                   <FadeIn key={job.id} delay={job.id * 0.1}>
-                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+                    <div className="overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
                       <div className="p-6">
-                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{job.title}</h3>
+                        <h3 className="mb-2 text-xl font-semibold text-gray-900 dark:text-white">{job.title}</h3>
                         <div className="flex flex-wrap gap-4 mb-4">
                           <div className="flex items-center text-gray-600 dark:text-gray-400">
                             <MapPin className="w-4 h-4 mr-1" />
@@ -242,18 +242,18 @@ const CareersPage = () => {
                             {job.salary}
                           </div>
                         </div>
-                        <p className="text-gray-600 dark:text-gray-400 mb-4">{job.description}</p>
+                        <p className="mb-4 text-gray-600 dark:text-gray-400">{job.description}</p>
                         <div className="mb-4">
-                          <h4 className="font-medium text-gray-900 dark:text-white mb-2">Responsibilities:</h4>
-                          <ul className="list-disc pl-5 space-y-1 text-gray-600 dark:text-gray-400">
+                          <h4 className="mb-2 font-medium text-gray-900 dark:text-white">Responsibilities:</h4>
+                          <ul className="pl-5 space-y-1 text-gray-600 list-disc dark:text-gray-400">
                             {job.responsibilities.map((item, index) => (
                               <li key={index}>{item}</li>
                             ))}
                           </ul>
                         </div>
                         <div className="mb-4">
-                          <h4 className="font-medium text-gray-900 dark:text-white mb-2">Requirements:</h4>
-                          <ul className="list-disc pl-5 space-y-1 text-gray-600 dark:text-gray-400">
+                          <h4 className="mb-2 font-medium text-gray-900 dark:text-white">Requirements:</h4>
+                          <ul className="pl-5 space-y-1 text-gray-600 list-disc dark:text-gray-400">
                             {job.requirements.map((item, index) => (
                               <li key={index}>{item}</li>
                             ))}
@@ -289,7 +289,7 @@ const CareersPage = () => {
                   </p>
                 </div>
 
-                <div className="max-w-3xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+                <div className="max-w-3xl p-6 mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800">
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                       <div>
@@ -499,8 +499,8 @@ const CareersPage = () => {
 
               <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                 <FadeIn delay={0.1}>
-                  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Employee Benefits</h3>
+                  <div className="p-6 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                    <h3 className="mb-4 text-xl font-semibold text-gray-900 dark:text-white">Employee Benefits</h3>
                     <ul className="space-y-3">
                       <li className="flex items-start">
                         <svg
@@ -594,13 +594,13 @@ const CareersPage = () => {
                 </FadeIn>
 
                 <FadeIn delay={0.2}>
-                  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Our Culture</h3>
-                    <p className="text-gray-600 dark:text-gray-400 mb-4">
+                  <div className="p-6 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                    <h3 className="mb-4 text-xl font-semibold text-gray-900 dark:text-white">Our Culture</h3>
+                    <p className="mb-4 text-gray-600 dark:text-gray-400">
                       At Hydroferric, we foster a culture of excellence, safety, and teamwork. We believe that our
                       success depends on the skills, dedication, and well-being of our employees.
                     </p>
-                    <p className="text-gray-600 dark:text-gray-400 mb-4">Our core values guide everything we do:</p>
+                    <p className="mb-4 text-gray-600 dark:text-gray-400">Our core values guide everything we do:</p>
                     <ul className="space-y-3">
                       <li className="flex items-start">
                         <svg
@@ -678,9 +678,9 @@ const CareersPage = () => {
               </div>
 
               <FadeIn delay={0.3}>
-                <div className="mt-8 bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Professional Development</h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-4">
+                <div className="p-6 mt-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                  <h3 className="mb-4 text-xl font-semibold text-gray-900 dark:text-white">Professional Development</h3>
+                  <p className="mb-4 text-gray-600 dark:text-gray-400">
                     We are committed to the professional growth and development of our employees. We offer:
                   </p>
                   <ul className="space-y-3">
@@ -746,10 +746,10 @@ const CareersPage = () => {
 
       {/* CTA Section */}
       <section className="py-12 bg-blue-600 dark:bg-blue-800">
-        <div className="container mx-auto px-4">
+        <div className="container px-4 mx-auto">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-white mb-4">Ready to Join Our Team?</h2>
-            <p className="text-xl text-blue-100 mb-8">
+            <h2 className="mb-4 text-3xl font-bold text-white">Ready to Join Our Team?</h2>
+            <p className="mb-8 text-xl text-blue-100">
               Explore our current openings and take the next step in your maritime career with Hydroferric.
             </p>
             <button

@@ -21,7 +21,7 @@ const FleetMapPage = () => {
       destination: "Bonny Island",
       eta: "2 hours",
       speed: "18 knots",
-      image: "/images/silverline-1.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
     },
     {
       id: "silverline2",
@@ -32,7 +32,7 @@ const FleetMapPage = () => {
       destination: "Brass Terminal",
       eta: "3 hours",
       speed: "20 knots",
-      image: "/images/silverline-2.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
     },
     {
       id: "silverline3",
@@ -43,7 +43,7 @@ const FleetMapPage = () => {
       destination: "N/A",
       eta: "N/A",
       speed: "0 knots",
-      image: "/images/silverline-3.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
     },
     {
       id: "silverline4",
@@ -54,7 +54,7 @@ const FleetMapPage = () => {
       destination: "N/A",
       eta: "N/A",
       speed: "0 knots",
-      image: "/images/silverline-3-alt.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
     },
   ])
 
@@ -156,7 +156,7 @@ const FleetMapPage = () => {
             {/* Vessel List Sidebar */}
             <div className="lg:col-span-1">
               <FadeIn>
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4">
+                <div className="p-4 bg-white rounded-lg shadow-md dark:bg-gray-800">
                   <div className="flex items-center justify-between mb-4">
                     <h2 className="text-xl font-semibold text-gray-900 dark:text-white">Fleet Vessels</h2>
                     <button
@@ -202,19 +202,19 @@ const FleetMapPage = () => {
                     ))}
                   </div>
 
-                  <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                  <div className="pt-4 mt-4 border-t border-gray-200 dark:border-gray-700">
                     <h3 className="mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">Status Legend</h3>
                     <div className="space-y-2">
                       <div className="flex items-center">
-                        <div className="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
+                        <div className="w-3 h-3 mr-2 bg-green-500 rounded-full"></div>
                         <span className="text-sm text-gray-600 dark:text-gray-400">Active</span>
                       </div>
                       <div className="flex items-center">
-                        <div className="w-3 h-3 rounded-full bg-blue-500 mr-2"></div>
+                        <div className="w-3 h-3 mr-2 bg-blue-500 rounded-full"></div>
                         <span className="text-sm text-gray-600 dark:text-gray-400">Docked</span>
                       </div>
                       <div className="flex items-center">
-                        <div className="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
+                        <div className="w-3 h-3 mr-2 bg-yellow-500 rounded-full"></div>
                         <span className="text-sm text-gray-600 dark:text-gray-400">Maintenance</span>
                       </div>
                     </div>
@@ -226,7 +226,7 @@ const FleetMapPage = () => {
             {/* Map Container */}
             <div className="lg:col-span-3">
               <FadeIn delay={0.1}>
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4">
+                <div className="p-4 bg-white rounded-lg shadow-md dark:bg-gray-800">
                   <div className="flex items-center justify-between mb-4">
                     <h2 className="text-xl font-semibold text-gray-900 dark:text-white">Live Map</h2>
                     <div className="flex space-x-2">
@@ -268,9 +268,9 @@ const FleetMapPage = () => {
                     className="relative w-full h-[600px] bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden"
                   >
                     {loading && (
-                      <div className="absolute inset-0 flex items-center justify-center bg-white/80 dark:bg-gray-800/80 z-10">
+                      <div className="absolute inset-0 z-10 flex items-center justify-center bg-white/80 dark:bg-gray-800/80">
                         <div className="flex flex-col items-center">
-                          <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+                          <div className="w-12 h-12 border-4 border-blue-600 rounded-full border-t-transparent animate-spin"></div>
                           <p className="mt-3 text-gray-600 dark:text-gray-400">Loading map data...</p>
                         </div>
                       </div>
@@ -290,7 +290,7 @@ const FleetMapPage = () => {
                                   : "https://i.imgur.com/QQQj2kF.png" // Standard map view
                             }
                             alt="Map of Nigeria"
-                            className="w-full h-full object-cover"
+                            className="object-cover w-full h-full"
                           />
                         </div>
 
@@ -320,7 +320,7 @@ const FleetMapPage = () => {
                                   vessel.status,
                                 )}`}
                               ></div>
-                              <div className="absolute top-5 left-1/2 transform -translate-x-1/2 bg-black/70 text-white text-xs px-2 py-1 rounded whitespace-nowrap">
+                              <div className="absolute px-2 py-1 text-xs text-white transform -translate-x-1/2 rounded top-5 left-1/2 bg-black/70 whitespace-nowrap">
                                 {vessel.name}
                               </div>
                             </div>
@@ -332,16 +332,16 @@ const FleetMapPage = () => {
 
                   {/* Selected Vessel Info */}
                   {selectedVessel && (
-                    <div className="mt-4 p-4 bg-gray-100 dark:bg-gray-700 rounded-lg">
+                    <div className="p-4 mt-4 bg-gray-100 rounded-lg dark:bg-gray-700">
                       <div className="flex items-start">
                         <img
                           src={selectedVessel.image || "/placeholder.svg"}
                           alt={selectedVessel.name}
-                          className="w-24 h-16 object-cover rounded-md mr-4"
+                          className="object-cover w-24 h-16 mr-4 rounded-md"
                         />
                         <div>
                           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{selectedVessel.name}</h3>
-                          <div className="grid grid-cols-2 gap-x-4 gap-y-2 mt-2">
+                          <div className="grid grid-cols-2 mt-2 gap-x-4 gap-y-2">
                             <div className="flex items-center text-sm text-gray-600 dark:text-gray-400">
                               <MapPin className="w-4 h-4 mr-1" />
                               <span>
@@ -395,19 +395,19 @@ const FleetMapPage = () => {
         <div className="container px-4 mx-auto">
           <div className="max-w-3xl mx-auto">
             <FadeIn>
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">About Our Fleet Tracking</h2>
-              <p className="text-gray-600 dark:text-gray-400 mb-4">
+              <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">About Our Fleet Tracking</h2>
+              <p className="mb-4 text-gray-600 dark:text-gray-400">
                 Our interactive fleet map provides real-time tracking of all Silverline vessels managed by Hydroferric.
                 The map is updated every few minutes to show the current location, status, and destination of each
                 vessel.
               </p>
-              <p className="text-gray-600 dark:text-gray-400 mb-4">
+              <p className="mb-4 text-gray-600 dark:text-gray-400">
                 This tracking system helps us maintain operational efficiency and provides our clients with transparency
                 regarding vessel locations and availability. The system uses advanced GPS technology and satellite
                 communications to ensure accurate positioning even in offshore environments.
               </p>
-              <div className="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Privacy Note</h3>
+              <div className="p-4 rounded-lg bg-blue-50 dark:bg-blue-900/30">
+                <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Privacy Note</h3>
                 <p className="text-gray-600 dark:text-gray-400">
                   For security reasons, vessel positions shown on the public map may be slightly offset from their
                   actual locations. Clients with active contracts can access precise vessel positions through our secure

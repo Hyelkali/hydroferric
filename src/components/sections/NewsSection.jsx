@@ -10,7 +10,7 @@ const NewsSection = () => {
       excerpt:
         "Hydroferric Nigeria Limited has expanded its fleet with the addition of two state-of-the-art offshore support vessels.",
       date: "May 15, 2023",
-      image: "/images/vessel-fleet.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
     },
     {
       id: "news2",
@@ -18,7 +18,7 @@ const NewsSection = () => {
       excerpt:
         "Hydroferric announces a strategic partnership with a leading international oil company to provide marine support services.",
       date: "April 3, 2023",
-      image: "/images/vessel-fleet.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
     },
     {
       id: "news3",
@@ -26,7 +26,7 @@ const NewsSection = () => {
       excerpt:
         "Hydroferric celebrates an important safety milestone of operating for 5 years without a lost time incident.",
       date: "March 12, 2023",
-      image: "/images/vessel-fleet.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
     },
   ]
 
@@ -47,7 +47,7 @@ const NewsSection = () => {
             <FadeIn key={item.id} delay={index * 0.1}>
               <div className="overflow-hidden rounded-lg shadow-md bg-gray-50 dark:bg-gray-900">
                 <img
-                  src={item.image || "/images/vessel-fleet.png"}
+                  src={item.image || "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg"}
                   alt={item.title}
                   className="object-cover w-full h-48"
                 />

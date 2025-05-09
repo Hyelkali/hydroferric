@@ -19,7 +19,7 @@ const FleetPage = () => {
       name: "Silverline 1",
       category: "crew",
       categoryName: "Crew Transfer Vessel",
-      image: "/images/silverline-1.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       specs: {
         length: "12m",
         capacity: "12 personnel",
@@ -33,7 +33,7 @@ const FleetPage = () => {
       name: "Silverline 2",
       category: "crew",
       categoryName: "Crew Transfer Vessel",
-      image: "/images/silverline-2.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       specs: {
         length: "12m",
         capacity: "12 personnel",
@@ -47,7 +47,7 @@ const FleetPage = () => {
       name: "Silverline 3",
       category: "crew",
       categoryName: "Crew Transfer Vessel",
-      image: "/images/silverline-3.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       specs: {
         length: "12m",
         capacity: "12 personnel",
@@ -61,7 +61,7 @@ const FleetPage = () => {
       name: "Silverline 4",
       category: "crew",
       categoryName: "Crew Transfer Vessel",
-      image: "/images/silverline-3-alt.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       specs: {
         length: "12m",
         capacity: "12 personnel",
@@ -271,7 +271,7 @@ const FleetPage = () => {
             <div className="lg:w-1/2">
               <FadeIn delay={0.2}>
                 <img
-                  src="/images/silverline-model.png"
+                  src="https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg.png"
                   alt="Silverline Vessel Model"
                   className="w-full h-auto rounded-lg shadow-xl"
                 />

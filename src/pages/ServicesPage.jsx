@@ -82,7 +82,7 @@ const ServicesPage = () => {
       <section
         className="py-20 bg-blue-600"
         style={{
-          backgroundImage: "url('/images/vessel-fleet.png')",
+          backgroundImage: "url('https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -218,7 +218,7 @@ const ServicesPage = () => {
               <div className={`lg:w-1/2 ${index % 2 !== 0 ? "order-1" : ""}`}>
                 <FadeIn delay={0.2}>
                   <img
-                    src="/images/vessel-fleet.png"
+                    src="https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg"
                     alt={service.title}
                     className="w-full h-auto rounded-lg shadow-xl"
                   />

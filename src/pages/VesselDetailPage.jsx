@@ -17,8 +17,8 @@ const VesselDetailPage = () => {
         id: "silverline1",
         name: "Silverline 1",
         category: "Crew Transfer Vessel",
-        image: "/images/silverline-1.png",
-        additionalImages: ["/images/silverline-1.png", "/images/silverline-model.png"],
+        image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
+        additionalImages: ["https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg", "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg"],
         description:
           "Silverline 1 is a modern 12-meter crew transfer vessel designed for safe and efficient transportation of personnel to offshore installations. Built in 2021, this vessel features advanced navigation systems, comfortable seating, and excellent seakeeping capabilities.",
         specs: {
@@ -56,8 +56,8 @@ const VesselDetailPage = () => {
         id: "silverline2",
         name: "Silverline 2",
         category: "Crew Transfer Vessel",
-        image: "/images/silverline-2.png",
-        additionalImages: ["/images/silverline-2.png", "/images/silverline-model.png"],
+        image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
+        additionalImages: ["https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg", "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg"],
         description:
           "Silverline 2 is a modern 12-meter crew transfer vessel designed for safe and efficient transportation of personnel to offshore installations. Built in 2021, this vessel features advanced navigation systems, comfortable seating, and excellent seakeeping capabilities.",
         specs: {
@@ -95,8 +95,8 @@ const VesselDetailPage = () => {
         id: "silverline3",
         name: "Silverline 3",
         category: "Crew Transfer Vessel",
-        image: "/images/silverline-3.png",
-        additionalImages: ["/images/silverline-3.png", "/images/silverline-3-alt.png"],
+        image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
+        additionalImages: ["https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg", "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg"],
         description:
           "Silverline 3 is a modern 12-meter crew transfer vessel designed for safe and efficient transportation of personnel to offshore installations. Built in 2022, this vessel features advanced navigation systems, comfortable seating, and excellent seakeeping capabilities.",
         specs: {
@@ -134,8 +134,8 @@ const VesselDetailPage = () => {
         id: "silverline4",
         name: "Silverline 4",
         category: "Crew Transfer Vessel",
-        image: "/images/silverline-3-alt.png",
-        additionalImages: ["/images/silverline-3-alt.png", "/images/silverline-model.png"],
+        image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg.png",
+        additionalImages: ["https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg.png", "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg"],
         description:
           "Silverline 4 is a modern 12-meter crew transfer vessel designed for safe and efficient transportation of personnel to offshore installations. Built in 2022, this vessel features advanced navigation systems, comfortable seating, and excellent seakeeping capabilities.",
         specs: {
@@ -182,9 +182,9 @@ const VesselDetailPage = () => {
 
   if (loading) {
     return (
-      <div className="pt-16 flex justify-center items-center min-h-screen bg-gray-50 dark:bg-gray-900">
+      <div className="flex items-center justify-center min-h-screen pt-16 bg-gray-50 dark:bg-gray-900">
         <div className="text-center">
-          <div className="w-16 h-16 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <div className="w-16 h-16 mx-auto mb-4 border-4 border-blue-600 rounded-full border-t-transparent animate-spin"></div>
           <p className="text-gray-600 dark:text-gray-400">Loading vessel information...</p>
         </div>
       </div>
@@ -193,10 +193,10 @@ const VesselDetailPage = () => {
 
   if (!vessel) {
     return (
-      <div className="pt-16 flex justify-center items-center min-h-screen bg-gray-50 dark:bg-gray-900">
-        <div className="text-center max-w-md px-4">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Vessel Not Found</h2>
-          <p className="text-gray-600 dark:text-gray-400 mb-6">
+      <div className="flex items-center justify-center min-h-screen pt-16 bg-gray-50 dark:bg-gray-900">
+        <div className="max-w-md px-4 text-center">
+          <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">Vessel Not Found</h2>
+          <p className="mb-6 text-gray-600 dark:text-gray-400">
             The vessel you are looking for could not be found. It may have been removed or you might have followed an
             incorrect link.
           </p>
@@ -224,12 +224,12 @@ const VesselDetailPage = () => {
           <div className="container mx-auto">
             <Link
               to="/fleet"
-              className="inline-flex items-center text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md mb-4"
+              className="inline-flex items-center px-4 py-2 mb-4 text-white bg-blue-600 rounded-md hover:bg-blue-700"
             >
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Fleet
             </Link>
-            <h1 className="text-4xl font-bold text-white mb-2">{vessel.name}</h1>
+            <h1 className="mb-2 text-4xl font-bold text-white">{vessel.name}</h1>
             <div className="inline-block px-3 py-1 text-sm font-medium text-white bg-blue-600 rounded-full">
               {vessel.category}
             </div>
@@ -239,27 +239,27 @@ const VesselDetailPage = () => {
 
       {/* Main Content */}
       <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="container px-4 mx-auto">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             {/* Left Column - Specifications */}
             <div className="lg:col-span-2">
               <FadeIn>
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-8">
-                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Vessel Overview</h2>
-                  <p className="text-gray-600 dark:text-gray-400 mb-6">{vessel.description}</p>
+                <div className="p-6 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                  <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">Vessel Overview</h2>
+                  <p className="mb-6 text-gray-600 dark:text-gray-400">{vessel.description}</p>
 
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Specifications</h3>
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+                  <h3 className="mb-3 text-xl font-semibold text-gray-900 dark:text-white">Specifications</h3>
+                  <div className="grid grid-cols-2 gap-4 mb-6 md:grid-cols-3">
                     {Object.entries(vessel.specs).map(([key, value]) => (
-                      <div key={key} className="border-l-2 border-blue-600 pl-3">
-                        <p className="text-sm text-gray-500 dark:text-gray-400 capitalize">{key}</p>
+                      <div key={key} className="pl-3 border-l-2 border-blue-600">
+                        <p className="text-sm text-gray-500 capitalize dark:text-gray-400">{key}</p>
                         <p className="font-medium text-gray-900 dark:text-white">{value}</p>
                       </div>
                     ))}
                   </div>
 
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Features</h3>
-                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-6">
+                  <h3 className="mb-3 text-xl font-semibold text-gray-900 dark:text-white">Features</h3>
+                  <ul className="grid grid-cols-1 gap-2 mb-6 md:grid-cols-2">
                     {vessel.features.map((feature, index) => (
                       <li key={index} className="flex items-start">
                         <svg
@@ -295,11 +295,11 @@ const VesselDetailPage = () => {
 
               {/* Gallery */}
               <FadeIn delay={0.1}>
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-8">
-                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Gallery</h2>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="p-6 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                  <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">Gallery</h2>
+                  <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                     {vessel.additionalImages.map((image, index) => (
-                      <div key={index} className="rounded-lg overflow-hidden">
+                      <div key={index} className="overflow-hidden rounded-lg">
                         <img
                           src={image || "/placeholder.svg"}
                           alt={`${vessel.name} - Image ${index + 1}`}
@@ -313,16 +313,16 @@ const VesselDetailPage = () => {
 
               {/* Maintenance Schedule */}
               <FadeIn delay={0.2}>
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Maintenance Schedule</h2>
+                <div className="p-6 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                  <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">Maintenance Schedule</h2>
                   <div className="overflow-x-auto">
                     <table className="min-w-full">
                       <thead>
                         <tr className="border-b border-gray-200 dark:border-gray-700">
-                          <th className="px-4 py-3 text-left text-sm font-semibold text-gray-700 dark:text-gray-300">
+                          <th className="px-4 py-3 text-sm font-semibold text-left text-gray-700 dark:text-gray-300">
                             Date
                           </th>
-                          <th className="px-4 py-3 text-left text-sm font-semibold text-gray-700 dark:text-gray-300">
+                          <th className="px-4 py-3 text-sm font-semibold text-left text-gray-700 dark:text-gray-300">
                             Activity
                           </th>
                         </tr>
@@ -350,8 +350,8 @@ const VesselDetailPage = () => {
             <div>
               {/* Quick Info */}
               <FadeIn>
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-8">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Quick Information</h3>
+                <div className="p-6 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                  <h3 className="mb-4 text-xl font-semibold text-gray-900 dark:text-white">Quick Information</h3>
                   <ul className="space-y-4">
                     <li className="flex items-start">
                       <Anchor className="w-5 h-5 mr-3 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
@@ -387,14 +387,14 @@ const VesselDetailPage = () => {
 
               {/* Contact */}
               <FadeIn delay={0.1}>
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-8">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Charter Inquiry</h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-4">
+                <div className="p-6 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                  <h3 className="mb-4 text-xl font-semibold text-gray-900 dark:text-white">Charter Inquiry</h3>
+                  <p className="mb-4 text-gray-600 dark:text-gray-400">
                     Interested in chartering {vessel.name}? Contact our team for availability and rates.
                   </p>
                   <Link
                     to="/contact"
-                    className="inline-flex items-center w-full px-4 py-2 font-medium text-white transition-colors bg-blue-600 rounded-md hover:bg-blue-700 justify-center"
+                    className="inline-flex items-center justify-center w-full px-4 py-2 font-medium text-white transition-colors bg-blue-600 rounded-md hover:bg-blue-700"
                   >
                     Contact Us
                   </Link>
@@ -403,8 +403,8 @@ const VesselDetailPage = () => {
 
               {/* Similar Vessels */}
               <FadeIn delay={0.2}>
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Similar Vessels</h3>
+                <div className="p-6 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                  <h3 className="mb-4 text-xl font-semibold text-gray-900 dark:text-white">Similar Vessels</h3>
                   <div className="space-y-4">
                     {["silverline1", "silverline2", "silverline3", "silverline4"]
                       .filter((v) => v !== vessel.id)
@@ -413,12 +413,12 @@ const VesselDetailPage = () => {
                         <Link
                           key={index}
                           to={`/fleet/${v}`}
-                          className="flex items-center p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                          className="flex items-center p-3 transition-colors rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                         >
                           <img
-                            src={`/images/silverline-${index + 1}.png`}
+                            src={`https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg`}
                             alt={`Silverline ${index + 1}`}
-                            className="w-16 h-12 object-cover rounded-md mr-3"
+                            className="object-cover w-16 h-12 mr-3 rounded-md"
                           />
                           <div>
                             <p className="font-medium text-gray-900 dark:text-white">Silverline {index + 1}</p>
@@ -436,10 +436,10 @@ const VesselDetailPage = () => {
 
       {/* CTA Section */}
       <section className="py-12 bg-blue-600 dark:bg-blue-800">
-        <div className="container mx-auto px-4">
+        <div className="container px-4 mx-auto">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-white mb-4">Ready to Charter {vessel.name}?</h2>
-            <p className="text-xl text-blue-100 mb-8">
+            <h2 className="mb-4 text-3xl font-bold text-white">Ready to Charter {vessel.name}?</h2>
+            <p className="mb-8 text-xl text-blue-100">
               Contact our team today to discuss how {vessel.name} can support your offshore operations.
             </p>
             <Link

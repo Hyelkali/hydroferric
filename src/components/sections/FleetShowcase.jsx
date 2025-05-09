@@ -8,7 +8,7 @@ const FleetShowcase = () => {
       id: "silverline1",
       name: "Silverline 1",
       category: "Crew Transfer Vessel",
-      image: "/images/silverline-1.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       specs: {
         length: "12m",
         capacity: "12 personnel",
@@ -19,7 +19,7 @@ const FleetShowcase = () => {
       id: "silverline2",
       name: "Silverline 2",
       category: "Crew Transfer Vessel",
-      image: "/images/silverline-2.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       specs: {
         length: "12m",
         capacity: "12 personnel",
@@ -30,7 +30,7 @@ const FleetShowcase = () => {
       id: "silverline3",
       name: "Silverline 3",
       category: "Crew Transfer Vessel",
-      image: "/images/silverline-3.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       specs: {
         length: "12m",
         capacity: "12 personnel",
@@ -41,7 +41,7 @@ const FleetShowcase = () => {
       id: "silverline4",
       name: "Silverline 4",
       category: "Crew Transfer Vessel",
-      image: "/images/silverline-4.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       specs: {
         length: "12m",
         capacity: "12 personnel",

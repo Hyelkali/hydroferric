@@ -24,42 +24,42 @@ const GalleryPage = () => {
       category: "vessels",
       title: "Silverline 1",
       description: "Pacific Silverline's crew transfer vessel Silverline 1 operating in the Gulf of Guinea.",
-      image: "/images/silverline-1.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
     },
     {
       id: 2,
       category: "vessels",
       title: "Silverline 2",
       description: "Crew transfer vessel Silverline 2 approaching an offshore platform.",
-      image: "/images/silverline-2.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
     },
     {
       id: 3,
       category: "vessels",
       title: "Silverline 3",
       description: "Silverline 3 during offshore operations.",
-      image: "/images/silverline-3.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
     },
     {
       id: 4,
       category: "vessels",
-      title: "Silverline 3 - Side View",
-      description: "Side view of Silverline 3 during operations.",
-      image: "/images/silverline-3-alt.png",
+      title: "Silverline 4 ",
+      description: "View of Silverline 4 during operations.",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
     },
     {
       id: 5,
       category: "operations",
       title: "Crew Transfer Operations",
       description: "Silverline vessel conducting crew transfer operations to an offshore platform.",
-      image: "/images/silverline-2.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
     },
     {
       id: 6,
       category: "operations",
       title: "Safety Drill",
       description: "Crew participating in a safety drill aboard Silverline 1.",
-      image: "/images/silverline-1.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
     },
     {
       id: 7,
@@ -75,33 +75,27 @@ const GalleryPage = () => {
       description: "Our state-of-the-art maintenance facility for the Silverline fleet.",
       image: "/images/vessel-fleet.png",
     },
+ 
     {
       id: 9,
-      category: "vessels",
-      title: "Silverline 4",
-      description: "The newest addition to the Pacific Silverline fleet managed by Hydroferric.",
-      image: "/images/silverline-3-alt.png",
-    },
-    {
-      id: 10,
       category: "operations",
       title: "Night Operations",
       description: "Silverline vessel operations during night time.",
-      image: "/images/silverline-1.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
+    },
+    {
+      id: 10,
+      category: "crew",
+      title: "Bridge Operations",
+      description: "Crew members on the bridge during operations.",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
     },
     {
       id: 11,
       category: "crew",
-      title: "Bridge Operations",
-      description: "Crew members on the bridge during operations.",
-      image: "/images/vessel-fleet.png",
-    },
-    {
-      id: 12,
-      category: "crew",
       title: "Maintenance Crew",
       description: "Our dedicated maintenance team ensuring the Silverline fleet is in top condition.",
-      image: "/images/vessel-fleet.png",
+      image: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
     },
   ]
 
@@ -232,7 +226,7 @@ const GalleryPage = () => {
               <FadeIn key={item} delay={(item - 1) * 0.1}>
                 <div className="overflow-hidden rounded-lg shadow-md bg-gray-50 dark:bg-gray-900">
                   <img
-                    src={`/images/silverline-${item}.png`}
+                    src={`https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg`}
                     alt={`News ${item}`}
                     className="object-cover w-full h-48"
                   />
@@ -292,7 +286,7 @@ const GalleryPage = () => {
                 <div className="overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
                   <div className="relative h-56">
                     <img
-                      src={`/images/silverline-${tour}.png`}
+                      src={`https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg`}
                       alt={`360° Tour ${tour}`}
                       className="object-cover w-full h-full"
                     />

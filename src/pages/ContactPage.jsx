@@ -42,7 +42,7 @@ const ContactPage = () => {
       <section
         className="py-20 bg-blue-600"
         style={{
-          backgroundImage: "url('/images/vessel-fleet.png')",
+          backgroundImage: "url('https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -314,7 +314,7 @@ const ContactPage = () => {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             <FadeIn delay={0.1}>
               <div id="port-harcourt" className="overflow-hidden rounded-lg shadow-md bg-gray-50 dark:bg-gray-900">
-                <img src="/images/vessel-fleet.png" alt="Port Harcourt Office" className="object-cover w-full h-48" />
+                <img src="https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg" alt="Port Harcourt Office" className="object-cover w-full h-48" />
                 <div className="p-6">
                   <h3 className="mb-3 text-xl font-semibold text-gray-900 dark:text-white">
                     Port Harcourt (Headquarters)
@@ -338,7 +338,7 @@ const ContactPage = () => {
 
             <FadeIn delay={0.2}>
               <div id="lagos" className="overflow-hidden rounded-lg shadow-md bg-gray-50 dark:bg-gray-900">
-                <img src="/images/vessel-fleet.png" alt="Lagos Office" className="object-cover w-full h-48" />
+                <img src="https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg" alt="Lagos Office" className="object-cover w-full h-48" />
                 <div className="p-6">
                   <h3 className="mb-3 text-xl font-semibold text-gray-900 dark:text-white">Lagos Office</h3>
                   <p className="mb-4 text-gray-600 dark:text-gray-400">
@@ -360,7 +360,7 @@ const ContactPage = () => {
 
             <FadeIn delay={0.3}>
               <div id="warri" className="overflow-hidden rounded-lg shadow-md bg-gray-50 dark:bg-gray-900">
-                <img src="/images/vessel-fleet.png" alt="Warri Office" className="object-cover w-full h-48" />
+                <img src="https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg" alt="Warri Office" className="object-cover w-full h-48" />
                 <div className="p-6">
                   <h3 className="mb-3 text-xl font-semibold text-gray-900 dark:text-white">Warri Office</h3>
                   <p className="mb-4 text-gray-600 dark:text-gray-400">

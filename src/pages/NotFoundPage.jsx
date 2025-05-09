@@ -7,12 +7,12 @@ const NotFoundPage = () => {
     <div
       className="flex items-center justify-center min-h-screen px-4 bg-gray-50 dark:bg-gray-900"
       style={{
-        backgroundImage: "url('/images/vessel-fleet.png')",
+        backgroundImage: "url('https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="text-center">
+      <div className="p-10 text-center bg-white rounded-lg shadow-lg dark:bg-gray-800">
         <h1 className="font-bold text-blue-600 text-9xl dark:text-blue-400">404</h1>
         <h2 className="mt-4 mb-6 text-3xl font-semibold text-gray-900 dark:text-white">Page Not Found</h2>
         <p className="max-w-md mx-auto mb-8 text-lg text-gray-600 dark:text-gray-400">

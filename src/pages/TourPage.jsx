@@ -17,21 +17,21 @@ const TourPage = () => {
         title: "Silverline 1 Vessel Tour",
         description:
           "Explore our Silverline 1 crew transfer vessel with this interactive 360° tour. Navigate through different areas of the vessel including the bridge, deck, and passenger area.",
-        imageUrl: "/images/silverline-1.png",
+        imageUrl: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       },
       {
         id: "2",
         title: "Silverline 2 Vessel Tour",
         description:
           "Take a virtual tour of our Silverline 2 crew transfer vessel. See the bridge, passenger area, and deck space of this modern vessel.",
-        imageUrl: "/images/silverline-2.png",
+        imageUrl: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       },
       {
         id: "3",
         title: "Silverline 3 Vessel Tour",
         description:
           "Experience our Silverline 3 crew transfer vessel with this 360° panorama showing the vessel's features and capabilities.",
-        imageUrl: "/images/silverline-3.png",
+        imageUrl: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       },
     ]
 
@@ -50,8 +50,8 @@ const TourPage = () => {
 
   if (!tourData) {
     return (
-      <div className="fixed inset-0 z-50 bg-black flex items-center justify-center">
-        <div className="text-white text-xl">Loading tour...</div>
+      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black">
+        <div className="text-xl text-white">Loading tour...</div>
       </div>
     )
   }

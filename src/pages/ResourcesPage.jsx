@@ -43,7 +43,7 @@ const ResourcesPage = () => {
       fileType: "pdf",
       fileSize: "3.2 MB",
       downloadUrl: "#",
-      thumbnail: "/images/hydroferric-logo.png",
+      thumbnail: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       date: "May 15, 2023",
       featured: true,
       relatedLinks: [
@@ -59,7 +59,7 @@ const ResourcesPage = () => {
       fileType: "pdf",
       fileSize: "2.8 MB",
       downloadUrl: "#",
-      thumbnail: "/images/silverline-model.png",
+      thumbnail: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       date: "April 3, 2023",
       featured: true,
       relatedLinks: [
@@ -75,7 +75,7 @@ const ResourcesPage = () => {
       fileType: "pdf",
       fileSize: "4.5 MB",
       downloadUrl: "#",
-      thumbnail: "/images/vessel-fleet.png",
+      thumbnail: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       date: "March 12, 2023",
       featured: false,
       relatedLinks: [
@@ -94,7 +94,7 @@ const ResourcesPage = () => {
       fileType: "pptx",
       fileSize: "5.7 MB",
       downloadUrl: "#",
-      thumbnail: "/images/silverline-1.png",
+      thumbnail: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       date: "February 20, 2023",
       featured: false,
       relatedLinks: [
@@ -110,7 +110,7 @@ const ResourcesPage = () => {
       fileType: "pdf",
       fileSize: "1.8 MB",
       downloadUrl: "#",
-      thumbnail: "/images/silverline-1.png",
+      thumbnail: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       date: "January 15, 2023",
       featured: false,
       relatedLinks: [
@@ -126,7 +126,7 @@ const ResourcesPage = () => {
       fileType: "pdf",
       fileSize: "1.8 MB",
       downloadUrl: "#",
-      thumbnail: "/images/silverline-2.png",
+      thumbnail: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       date: "January 15, 2023",
       featured: false,
       relatedLinks: [
@@ -142,7 +142,7 @@ const ResourcesPage = () => {
       fileType: "pdf",
       fileSize: "1.9 MB",
       downloadUrl: "#",
-      thumbnail: "/images/silverline-3.png",
+      thumbnail: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       date: "January 15, 2023",
       featured: false,
       relatedLinks: [
@@ -158,7 +158,7 @@ const ResourcesPage = () => {
       fileType: "pdf",
       fileSize: "1.9 MB",
       downloadUrl: "#",
-      thumbnail: "/images/silverline-3-alt.png",
+      thumbnail: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       date: "January 15, 2023",
       featured: false,
       relatedLinks: [
@@ -174,7 +174,7 @@ const ResourcesPage = () => {
       fileType: "pdf",
       fileSize: "3.2 MB",
       downloadUrl: "#",
-      thumbnail: "/images/vessel-fleet.png",
+      thumbnail: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       date: "December 10, 2022",
       featured: false,
       relatedLinks: [
@@ -190,7 +190,7 @@ const ResourcesPage = () => {
       fileType: "pptx",
       fileSize: "6.1 MB",
       downloadUrl: "#",
-      thumbnail: "/images/hydroferric-logo.png",
+      thumbnail: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       date: "November 5, 2022",
       featured: false,
       relatedLinks: [
@@ -206,7 +206,7 @@ const ResourcesPage = () => {
       fileType: "pdf",
       fileSize: "2.5 MB",
       downloadUrl: "#",
-      thumbnail: "/images/vessel-fleet.png",
+      thumbnail: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       date: "October 20, 2022",
       featured: false,
       relatedLinks: [
@@ -222,7 +222,7 @@ const ResourcesPage = () => {
       fileType: "zip",
       fileSize: "45.8 MB",
       downloadUrl: "#",
-      thumbnail: "/images/silverline-2.png",
+      thumbnail: "https://res.cloudinary.com/devnath/image/upload/v1746790048/2871435_bhymih.jpg",
       date: "September 15, 2022",
       featured: false,
       relatedLinks: [
