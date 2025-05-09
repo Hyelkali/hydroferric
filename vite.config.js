@@ -14,16 +14,17 @@ export default defineConfig({
     port: 5173,
     open: true,
   },
+  // Disable optimizeDeps to avoid Rollup issues
+  optimizeDeps: {
+    disabled: process.env.NODE_ENV === "production",
+  },
   build: {
-    // Ensure compatibility with Vercel's build environment
-    rollupOptions: {
-      // Optimize build for deployment
-      output: {
-        manualChunks: {
-          vendor: ["react", "react-dom", "react-router-dom"],
-          charts: ["recharts"],
-        },
-      },
-    },
+    // Use esbuild for production builds instead of Rollup
+    minify: "esbuild",
+    target: "es2015",
+    outDir: "dist",
+    assetsDir: "assets",
+    // Reduce chunk size warnings
+    chunkSizeWarningLimit: 1000,
   },
 })
