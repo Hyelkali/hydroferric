@@ -107,7 +107,7 @@ const Navbar = () => {
       <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
-            <img src="https://res.cloudinary.com/devnath/image/upload/v1746789634/hydroferric-logo_yojvov.png" alt="Hydroferric Logo" className="w-auto h-10 dark:hidden" />
+            <img src="https://res.cloudinary.com/devnath/image/upload/v1746789634/hydroferric-logo_yojvov.png" alt="Hydroferric Logo" className="w-auto h-10" />
             <img
               src="/images/hydroferric-logo-white.png"
               alt="Hydroferric Logo"
