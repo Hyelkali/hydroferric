@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
           <div>
-            <img src="/images/hydroferric-logo-white.png" alt="Hydroferric Logo" className="w-auto h-12 mb-4" />
+            <img src="https://res.cloudinary.com/devnath/image/upload/v1746789634/hydroferric-logo-white_inbfv0.png" alt="Hydroferric Logo" className="w-auto h-10 mb-4" />
             <p className="mb-4 text-gray-400">
               Providing world-class marine and offshore support services with a commitment to safety, reliability, and
               excellence.
