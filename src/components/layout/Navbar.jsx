@@ -6,7 +6,7 @@ import { Menu, X, ChevronDown, Sun, Moon } from "react-feather"
 import { useTheme } from "../../components/theme/ThemeProvider"
 import LanguageSwitcher from "../common/LanguageSwitcher"
 import { useLanguage } from "../../contexts/LanguageContext"
-
+import { logo } from "../../../images/hydroferric-logo.png"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -107,7 +107,7 @@ const Navbar = () => {
       <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
-            <img src="/images/hydroferric-logo.png" alt="Hydroferric Logo" className="w-auto h-10 dark:hidden" />
+            <img src={logo} alt="Hydroferric Logo" className="w-auto h-10 dark:hidden" />
             <img
               src="/images/hydroferric-logo-white.png"
               alt="Hydroferric Logo"

@@ -3,6 +3,7 @@
 import { Link } from "react-router-dom"
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from "react-feather"
 import { useLanguage } from "../../contexts/LanguageContext"
+import { logo } from "../../../images/hydroferric-logo-white.png"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -14,7 +15,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
           <div>
-            <img src="/images/hydroferric-logo-white.png" alt="Hydroferric Logo" className="w-auto h-12 mb-4" />
+            <img src={logo} alt="Hydroferric Logo" className="w-auto h-12 mb-4" />
             <p className="mb-4 text-gray-400">
               Providing world-class marine and offshore support services with a commitment to safety, reliability, and
               excellence.
