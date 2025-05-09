@@ -10,11 +10,20 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  css: {
-    postcss: "./postcss.config.js",
-  },
   server: {
     port: 5173,
     open: true,
+  },
+  build: {
+    // Ensure compatibility with Vercel's build environment
+    rollupOptions: {
+      // Optimize build for deployment
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom", "react-router-dom"],
+          charts: ["recharts"],
+        },
+      },
+    },
   },
 })
